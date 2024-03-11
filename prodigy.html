@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+
+
+#element{
+
+color: rgb(14, 14, 13);
+font-weight: 900;
+font-size: 60px;
+margin-bottom: 100px;
+position: relative;
+text-shadow: 2px 2px red;
+top: -380px;
+
+}
+
+
+</style>
+
+<body>
+
+
+  <div class="msg-container hide">
+
+    <marquee id="msg" style=" font-size: 50px;margin-top: 150px; text-shadow: 2px 2px rgb(255, 0, 0);">Winner</marquee>
+
+    <div class="container">
+      <div><span id="element"></span></div>
+  
+    </div>
+  
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['My name is Karan', 'Tic-Tac-Toe Game '],
+          typeSpeed: 60,
+          loop: true
+        });
+      </script>
+    
+
+    <button id="new-btn" style="margin-top: 350px; cursor: pointer;">New Game</button>
+  </div>
+  <main>
+
+    <!-- <h1>Tic Tac Toe</h1> -->
+
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+    <button id="reset-btn" style="cursor: pointer;">Reset Game</button>
+  </main>
+  <script src="pro.js"></script>
+   
+</body>
+
+</html>
